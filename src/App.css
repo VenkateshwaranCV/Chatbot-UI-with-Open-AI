@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -36,3 +39,84 @@
     transform: rotate(360deg);
   }
 }
+
+/* Additional Styles for Chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vh;
+  background-color: #f4f4f9;
+}
+
+.header {
+  padding: 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+}
+
+.chat-history {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.text-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.input-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  margin-left: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  margin: 10px 0;
+}
+
+.message-bubble {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.rex-bubble {
+  background-color: #3f51b5;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.user-bubble {
+  background-color: #e0e0e0;
+  color: #000;
+  align-self: flex-end;
+}
+
